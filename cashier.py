@@ -3,9 +3,9 @@ class Cashier:
         pass
 
     def process_coins(self):
-        """Returns the total calculated from coins inserted."""
-        print("Please insert coins.")
-        total = int(input("how many large dollars?: ")) * 1.00
+        """Returns the total calculated from payment inserted."""
+        print("Please insert payment.")
+        total = int(input("how many single dollars?: ")) * 1.00
         total += int(input("how many half dollars?: ")) * 0.50
         total += int(input("how many quarters?: ")) * 0.25
         total += int(input("how many nickels?: ")) * 0.05
@@ -16,8 +16,8 @@ class Cashier:
         if coins >= cost:
             change = round(coins - cost, 2)
             if change > 0:
-                print(f"Here is ${change} in change.")
+                print("Here is $", change, "in change.")
             return True
         else:
-            print("Sorry that's not enough money. Money refunded.")
+            print("Sorry that's not enough money.")
             return False
