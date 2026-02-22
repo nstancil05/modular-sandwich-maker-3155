@@ -16,7 +16,7 @@ class Cashier:
         if coins >= cost:
             change = round(coins - cost, 2)
             if change > 0:
-                print("Here is $", change, "in change.")
+                print(f"Here is ${change} in change.")
             return True
         else:
             print("Sorry that's not enough money.")

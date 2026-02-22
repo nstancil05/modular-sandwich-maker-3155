@@ -17,6 +17,7 @@ def main():
         elif choice in recipes:
             sandwich = recipes[choice]
             if sandwich_maker_instance.check_resources(sandwich["ingredients"]):
+                print("The cost of a", choice, "sandwich is $" + str(sandwich["cost"]))
                 payment = cashier_instance.process_coins()
                 if cashier_instance.transaction_result(payment, sandwich["cost"]):
                     sandwich_maker_instance.make_sandwich(choice, sandwich["ingredients"])
