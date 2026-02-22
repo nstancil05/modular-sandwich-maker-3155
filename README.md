@@ -12,7 +12,7 @@ A Python command-line sandwich ordering program built with modular OOP design fo
 ## How to Run
 
 ```
-python main.py
+python main.py or locally in IDE
 ```
 
 Follow the prompts to select a sandwich size and insert payment.
